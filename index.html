@@ -1,0 +1,102 @@
+<!DOCTYPE html> <html><head>
+        <title>Spongebob Squarepants</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Acme&amp;family=Nunito:wght@400&amp;family=Sigmar+One&amp;display=swap" rel="stylesheet">
+    <style>body {
+    background-color: #40c5d4;
+    /*color: #795d1a;*/
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Acme', sans-serif;
+}
+
+img.profile {
+    width: 20em;
+    border: 2px solid black;
+}
+
+strong {
+    background-color: #fdd832;
+    font-family: 'Sigmar One', sans-serif;
+}
+
+.about {
+    border: 2px solid black;
+    padding: 1em;
+    /*background-color: #e27136;*/
+    
+    /* This is a cute image of Patrick, and this color matches the top left corner of that image */
+    background-color: #7d9500;
+    background-image: url("https://www.denofgeek.com/wp-content/uploads/2013/11/patrick-star-wallpaper.jpg?resize=768%2C432");
+    background-size: 10em;
+    padding-right: 10em; /* Give the image some space */
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.signature {
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+}
+.best-friend {
+    font-style: italic;
+}
+
+.future {
+    font-style: italic;
+}
+
+
+li {
+    /* Remove the bullet because we'll insert a ::before element with a background image */
+    list-style: none;
+
+    /* Center the text vertically */
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+/* Unlike a list-style-image, this element can scale the background image */
+li::before {
+    content: '';
+    display: inline-block;
+    height: 8em;
+    width: 8em;
+    margin-right: 0.5em;
+    background-color: black;
+    background-size: cover;
+}
+
+/* We could have put these images in img tags in the HTML, too.  They're this way because they started as list-style-image properties */
+li.bubble::before {
+    background-image: url("https://i.pinimg.com/originals/81/ce/05/81ce05c4d7f60fb4e4ab988e62762572.jpg");
+}
+li.jellyfish::before {
+    background-image: url("https://static.wikia.nocookie.net/spongebob/images/c/cc/Jellyfishh.png/revision/latest/scale-to-width-down/229?cb=20191123014159");
+}
+li.karate::before {
+    background-image: url("https://www.sbmania.net/pictures/_thumb/166a/557.jpg");
+}</style></head>
+    <body>
+        <h1>Spongebob Squarepants - HireMe!</h1>
+
+        <img class="profile" src="https://assets.teenvogue.com/photos/5c66f5cc320871763663e08f/master/pass/tout-spongebob-squarepants.jpg">
+
+        <p class="about">Who lives in a pineapple under the sea? <strong>Spongebob Squarepants!</strong> Who has a work ethic that's always ready? <strong>Spongebob Squarepants!</strong> <span class="signature">--Patrick, <span class="best-friend">best friend</span></span></p>
+
+        <p class="future">In 5 years, Spongebob sees himself continuing to be the premier fry cook in Bikini Bottom, and helping to keep the city safe and in order.</p>
+        
+        <h2>Interests</h2>
+
+        <ul>
+            <li class="bubble">Blowing bubbles</li>
+            <li class="jellyfish">Catching jellyfish</li>
+            <li class="karate">Karate</li>
+        </ul>
+    
+</body></html>
